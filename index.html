@@ -1,181 +1,2067 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arpit Ekka | Premium Data Analyst Portfolio</title>
-  <meta name="description" content="Professional portfolio of Arpit Ekka, a recruiter-focused Data Analyst, SQL Enthusiast, Python Developer, and Power BI dashboard creator.">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animation.css">
-  <link rel="stylesheet" href="css/responsive.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arpit Ekka | Aspiring Data Scientist</title>
+    <meta name="description" content="Portfolio of Arpit Ekka - Aspiring Data Scientist specializing in Machine Learning, Deep Learning, and Data Analysis">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="animate-fade-in">
-
-  <!-- Top Glow Backdrop -->
-  <div class="bg-glow-top"></div>
-
-  <!-- Navigation Bar -->
-  <header class="navbar">
-    <div class="container">
-      <a href="index.html" class="nav-logo" id="nav-logo">
-        Arpit Ekka<span>.</span>
-      </a>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle-check">
-      <label for="nav-toggle" class="nav-toggle-label" id="mobile-nav-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-      <nav class="nav-menu" id="navigation-menu">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="skills.html" class="nav-link">Skills</a>
-        <a href="projects.html" class="nav-link">Projects</a>
-        <a href="resume.html" class="nav-link">Resume</a>
-        <a href="certificates.html" class="nav-link">Certificates</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <main>
-    <section class="section hero-section" style="padding-top: 11rem; padding-bottom: 6rem;">
-      <div class="container grid-2" style="align-items: center;">
-        <div class="hero-content animate-slide-up">
-          <span class="section-subtitle">DATA ANALYST &amp; PYTHON DEVELOPER</span>
-          <h1 class="hero-title" style="font-size: 4rem; line-height: 1.1; margin-bottom: 1.5rem; font-weight: 800; background: linear-gradient(135deg, #FFF 40%, var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-            Arpit Ekka
-          </h1>
-          
-          <!-- Typing effect tags / subheaders -->
-          <div class="hero-tags" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem;">
-            <span class="badge badge-primary">SQL Enthusiast</span>
-            <span class="badge badge-primary">Power BI Developer</span>
-            <span class="badge badge-primary">Python Programmer</span>
-            <span class="badge badge-primary">Machine Learning Learner</span>
-          </div>
-
-          <p class="hero-description" style="font-size: 1.05rem; margin-bottom: 2.5rem; text-align: justify;">
-            I am a results-oriented Data Analyst aspirant passionate about converting complex datasets into actionable strategic intelligence. Armed with a solid foundation in Python programming, advanced SQL querying, and interactive Power BI dashboarding, I specialize in identifying hidden business patterns, optimizing processes, and designing automated data pipelines. My learning journey spans across exploratory data analysis (EDA), predictive statistical modeling, and machine learning workflows, which allow me to approach data from both retrospective and forward-looking dimensions. I thrive at the intersection of business strategy and technical execution, communicating complex analytical insights in clear, business-friendly terms. Through hands-on development of 15+ database and scripting projects, I have honed my ability to clean messy real-world data, write high-performance SQL CTEs, and construct dynamic visuals that empower stakeholders to make data-driven decisions with confidence. Eager to bring my detail-oriented methodology, problem-solving skills, and dedication to data integrity to a forward-thinking business intelligence or data analytics team.
-          </p>
-
-          <div class="btn-group">
-            <a href="resume.html" class="btn btn-primary" id="btn-download-resume">Download Resume</a>
-            <a href="projects.html" class="btn btn-secondary" id="btn-view-projects">View Projects</a>
-          </div>
-        </div>
-
-        <div class="hero-visual animate-slide-left delay-2" style="position: relative;">
-          <!-- Glowing effect card -->
-          <div class="glass-card" style="padding: 1rem; border-radius: 20px; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
-            <div class="zoom-container" style="border-radius: 12px; height: 350px;">
-              <img src="assets/images/hero_illustration.png" alt="Data Analytics Visualization Illustration" class="zoom-image" style="width:100%; height:100%; object-fit:cover;">
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="#home">Arpit Ekka</a>
             </div>
-          </div>
-          <div class="bg-glow-card" style="top: -20px; right: -20px;"></div>
-        </div>
-      </div>
-    </section>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Statistics Grid Section -->
-    <section class="section stats-section" style="padding: 4rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.01);">
-      <div class="container">
-        <div class="grid-5" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 2rem; text-align: center;">
-          
-          <div class="stat-card animate-slide-up delay-1">
-            <h3 style="font-size: 2.75rem; color: var(--accent); font-weight: 800; margin-bottom: 0.25rem;">15+</h3>
-            <p style="font-size: 0.875rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary);">Projects Completed</p>
-          </div>
-
-          <div class="stat-card animate-slide-up delay-2">
-            <h3 style="font-size: 2.75rem; color: var(--text-primary); font-weight: 800; margin-bottom: 0.25rem;">10</h3>
-            <p style="font-size: 0.875rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary);">Dashboards Created</p>
-          </div>
-
-          <div class="stat-card animate-slide-up delay-3">
-            <h3 style="font-size: 2.75rem; color: var(--accent); font-weight: 800; margin-bottom: 0.25rem;">500+</h3>
-            <p style="font-size: 0.875rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary);">SQL Queries Written</p>
-          </div>
-
-          <div class="stat-card animate-slide-up delay-4">
-            <h3 style="font-size: 2.75rem; color: var(--text-primary); font-weight: 800; margin-bottom: 0.25rem;">8</h3>
-            <p style="font-size: 0.875rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary);">Certificates Earned</p>
-          </div>
-
-          <div class="stat-card animate-slide-up delay-5">
-            <h3 style="font-size: 2.75rem; color: var(--accent); font-weight: 800; margin-bottom: 0.25rem;">25+</h3>
-            <p style="font-size: 0.875rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary);">Python Programs</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Why Recruit Arpit Section -->
-    <section class="section about-preview-section">
-      <div class="container grid-2" style="gap: 4rem; align-items: center;">
-        <div class="about-preview-image animate-slide-right">
-          <div class="glass-card" style="padding: 1.5rem; border-radius: 20px;">
-            <div class="zoom-container" style="border-radius: 12px; height: 380px;">
-              <img src="assets/images/profile.png" alt="Arpit Ekka Professional Avatar" class="zoom-image" style="width:100%; height:100%; object-fit:cover; object-position:center;">
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-greeting">Hello, I'm</h1>
+                    <h2 class="hero-name">Arpit Ekka</h2>
+                    <h3 class="hero-title">Aspiring Data Scientist</h3>
+                    <p class="hero-description">
+                        Passionate about transforming complex data into actionable insights. I specialize in machine learning, 
+                        deep learning, and data visualization to solve real-world problems. Currently exploring cutting-edge 
+                        technologies in AI and building innovative solutions that make a difference.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#resume" class="btn btn-primary">Download Resume</a>
+                        <a href="#projects" class="btn btn-secondary">View Projects</a>
+                        <a href="#contact" class="btn btn-accent">Contact Me</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com" class="social-link" aria-label="GitHub">GitHub</a>
+                        <a href="https://linkedin.com" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="https://kaggle.com" class="social-link" aria-label="Kaggle">Kaggle</a>
+                        <a href="mailto:arpit.ekka@email.com" class="social-link" aria-label="Email">Email</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="Images/My Photo.jpg" alt="Arpit Ekka - Aspiring Data Scientist" class="profile-photo">
+                </div>
             </div>
-          </div>
-        </div>
-        
-        <div class="about-preview-content animate-slide-left">
-          <span class="section-subtitle">MEET THE CANDIDATE</span>
-          <h2 class="section-title">Bridging Raw Data &amp; Business Intelligence</h2>
-          <p style="margin-bottom: 1.5rem;">
-            Hi, I'm Arpit. I view data analytics not just as a mechanical practice of parsing rows and columns, but as a discipline of structural discovery. Every business problem contains mathematical and analytical answers; my role is to formulate the right queries to extract them.
-          </p>
-          <p style="margin-bottom: 2rem;">
-            Whether it's deploying robust linear regressions in Python to forecast churn, scripting clean SQL join operations on multiple tables, or designing dynamic Power BI reports with cross-highlighting, my focus is always on delivering premium quality and reliable metrics.
-          </p>
-          <a href="about.html" class="btn btn-secondary" id="btn-read-about">Read My Career Journey</a>
-        </div>
-      </div>
-    </section>
-  </main>
+        </section>
 
-  <!-- Footer Section -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-brand">
-        <a href="index.html" class="nav-logo" style="font-size: 1.75rem;">
-          Arpit Ekka<span>.</span>
-        </a>
-        <p class="footer-desc">
-          Recruiter-focused portfolio of a detail-oriented Data Analyst candidate specializing in Python, SQL, and Power BI solutions.
-        </p>
-      </div>
-      <div class="footer-nav">
-        <h4 class="footer-title">Quick Links</h4>
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Journey</a></li>
-          <li><a href="skills.html">Skills Grid</a></li>
-          <li><a href="projects.html">Projects Case Studies</a></li>
-          <li><a href="resume.html">Resume Details</a></li>
-          <li><a href="certificates.html">Credentials</a></li>
-          <li><a href="contact.html">Contact Hub</a></li>
-        </ul>
-      </div>
-      <div class="footer-social">
-        <h4 class="footer-title">Connect</h4>
-        <ul class="footer-links">
-          <li><a href="https://linkedin.com" target="_blank">LinkedIn Profile</a></li>
-          <li><a href="https://github.com" target="_blank">GitHub Projects</a></li>
-          <li><a href="mailto:arpit.ekka@email.com">Email Direct</a></li>
-          <li><a href="tel:+919876543210">Call +91 9876543210</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <p>&copy; 2026 Arpit Ekka. All rights reserved.</p>
-      <span>Made with premium HTML5 &amp; CSS3. No JS.</span>
-    </div>
-  </footer>
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Data Science Enthusiast & Problem Solver</h3>
+                        <p>
+                            I am an aspiring Data Scientist with a strong foundation in mathematics, statistics, and programming. 
+                            My journey into data science began during my undergraduate studies when I discovered the power of 
+                            data-driven decision making. Since then, I have been actively learning and implementing machine 
+                            learning algorithms to solve complex problems across various domains.
+                        </p>
+                        <p>
+                            What drives me is the opportunity to uncover hidden patterns in data and translate them into 
+                            meaningful insights that can drive business value and social impact. I believe that data science 
+                            is not just about building models, but about understanding the story behind the data and 
+                            communicating it effectively to stakeholders.
+                        </p>
+                        <p>
+                            My approach combines technical expertise with business acumen. I enjoy working on end-to-end 
+                            projects, from data collection and cleaning to model deployment and monitoring. I am particularly 
+                            interested in the intersection of machine learning and real-world applications, especially in 
+                            healthcare, finance, and sustainability sectors.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <h4>Why Data Science?</h4>
+                                <p>
+                                    Data science allows me to combine my analytical skills with my passion for solving 
+                                    real-world problems. The ability to extract insights from data and make predictions 
+                                    about the future is incredibly powerful and motivating.
+                                </p>
+                            </div>
+                            <div class="highlight-item">
+                                <h4>Career Journey</h4>
+                                <p>
+                                    Started with foundational programming, moved to statistical analysis, then discovered 
+                                    machine learning. Currently focusing on deep learning and generative AI applications 
+                                    while building a strong portfolio of projects.
+                                </p>
+                            </div>
+                            <div class="highlight-item">
+                                <h4>Future Goals</h4>
+                                <p>
+                                    Aim to work as a Data Scientist at a leading tech company, contributing to innovative 
+                                    AI solutions. Long-term goal is to lead data science teams and mentor aspiring data 
+                                    scientists while pushing the boundaries of what's possible with AI.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="strengths">
+                            <h4>Core Strengths</h4>
+                            <div class="strength-grid">
+                                <div class="strength-card">
+                                    <span class="strength-icon">🧠</span>
+                                    <h5>Problem Solving</h5>
+                                    <p>Breaking down complex problems into manageable components and developing systematic solutions</p>
+                                </div>
+                                <div class="strength-card">
+                                    <span class="strength-icon">💡</span>
+                                    <h5>Critical Thinking</h5>
+                                    <p>Analyzing data from multiple perspectives and challenging assumptions to find optimal solutions</p>
+                                </div>
+                                <div class="strength-card">
+                                    <span class="strength-icon">📚</span>
+                                    <h5>Continuous Learning</h5>
+                                    <p>Staying updated with latest technologies and methodologies in the rapidly evolving field of AI</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <!-- Programming Skills -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Programming</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">R</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">C++</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Data Analysis -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Data Analysis</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Excel</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Pandas</span>
+                                    <span class="skill-percentage">92%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">NumPy</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Statistics</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visualization -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Visualization</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Power BI</span>
+                                    <span class="skill-percentage">82%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 82%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Tableau</span>
+                                    <span class="skill-percentage">78%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 78%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Matplotlib</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Plotly</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Machine Learning -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Machine Learning</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Regression</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Classification</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Clustering</span>
+                                    <span class="skill-percentage">82%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 82%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Feature Engineering</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Deep Learning -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Deep Learning</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">TensorFlow</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">PyTorch</span>
+                                    <span class="skill-percentage">78%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 78%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Keras</span>
+                                    <span class="skill-percentage">82%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 82%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Computer Vision</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Computer Vision -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Computer Vision</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">OpenCV</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">CNN</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">YOLO</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NLP -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Natural Language Processing</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">NLTK</span>
+                                    <span class="skill-percentage">82%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 82%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">spaCy</span>
+                                    <span class="skill-percentage">78%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 78%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Transformers</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HuggingFace</span>
+                                    <span class="skill-percentage">72%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 72%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Generative AI -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Generative AI</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Prompt Engineering</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">LangChain</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">LLMs</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Vector Databases</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">RAG</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Deployment -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Deployment</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Flask</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">FastAPI</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Docker</span>
+                                    <span class="skill-percentage">72%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 72%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">GitHub</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Cloud Platforms</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">AWS</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Azure</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Google Cloud</span>
+                                    <span class="skill-percentage">68%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 68%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="timeline">
+                    <!-- Bachelor's Degree -->
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2021 - 2025</div>
+                            <h3>Bachelor of Technology in Computer Science</h3>
+                            <h4>Institute of Engineering and Technology, Lucknow</h4>
+                            <p class="timeline-cgpa">CGPA: 8.5/10</p>
+                            <div class="timeline-achievements">
+                                <h5>Achievements</h5>
+                                <ul>
+                                    <li>Dean's List for Academic Excellence (2022, 2023, 2024)</li>
+                                    <li>Best Project Award for Data Science Capstone Project</li>
+                                    <li>Lead Organizer of College Data Science Club</li>
+                                    <li>Published research paper on ML applications in healthcare</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Intermediate -->
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2019 - 2021</div>
+                            <h3>Higher Secondary Education (Science Stream)</h3>
+                            <h4>Delhi Public School, Varanasi</h4>
+                            <p class="timeline-cgpa">Percentage: 92%</p>
+                            <div class="timeline-achievements">
+                                <h5>Achievements</h5>
+                                <ul>
+                                    <li>School Topper in Mathematics and Computer Science</li>
+                                    <li>National Science Olympiad Qualifier</li>
+                                    <li>Captain of School Robotics Team</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- School -->
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2017 - 2019</div>
+                            <h3>Secondary Education</h3>
+                            <h4>Delhi Public School, Varanasi</h4>
+                            <p class="timeline-cgpa">Percentage: 89%</p>
+                            <div class="timeline-achievements">
+                                <h5>Achievements</h5>
+                                <ul>
+                                    <li>Consistent Academic Performance throughout</li>
+                                    <li>Participated in National Level Mathematics Competition</li>
+                                    <li>Active member of School Computer Club</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience-grid">
+                    <!-- Data Science Intern -->
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <h3>Data Science Intern</h3>
+                            <span class="experience-company">TechSolutions Inc.</span>
+                            <span class="experience-duration">June 2024 - August 2024</span>
+                        </div>
+                        <div class="experience-content">
+                            <h4>Responsibilities</h4>
+                            <ul>
+                                <li>Developed predictive models for customer churn prediction with 87% accuracy</li>
+                                <li>Created automated data pipelines using Python and SQL for real-time analytics</li>
+                                <li>Built interactive dashboards in Power BI for executive reporting</li>
+                                <li>Collaborated with cross-functional teams to identify business opportunities</li>
+                            </ul>
+                            <h4>Key Achievements</h4>
+                            <ul>
+                                <li>Reduced customer churn by 15% through early warning system implementation</li>
+                                <li>Optimized marketing campaigns resulting in 20% increase in conversion rates</li>
+                                <li>Received "Outstanding Intern" award for exceptional performance</li>
+                            </ul>
+                            <h4>Technologies Used</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Scikit-learn</span>
+                                <span class="tech-tag">SQL</span>
+                                <span class="tech-tag">Power BI</span>
+                                <span class="tech-tag">TensorFlow</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Machine Learning Intern -->
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <h3>Machine Learning Intern</h3>
+                            <span class="experience-company">DataDriven Analytics</span>
+                            <span class="experience-duration">January 2024 - May 2024</span>
+                        </div>
+                        <div class="experience-content">
+                            <h4>Responsibilities</h4>
+                            <ul>
+                                <li>Implemented computer vision models for quality control in manufacturing</li>
+                                <li>Developed NLP models for sentiment analysis on customer feedback</li>
+                                <li>Optimized existing ML models for better performance and reduced latency</li>
+                                <li>Documented model architectures and created technical specifications</li>
+                            </ul>
+                            <h4>Key Achievements</h4>
+                            <ul>
+                                <li>Achieved 95% accuracy in defect detection using CNN models</li>
+                                <li>Reduced model inference time by 40% through optimization techniques</li>
+                                <li>Contributed to open-source ML library with bug fixes and features</li>
+                            </ul>
+                            <h4>Technologies Used</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">PyTorch</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">NLTK</span>
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Freelance Data Analyst -->
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <h3>Freelance Data Analyst</h3>
+                            <span class="experience-company">Self-Employed</span>
+                            <span class="experience-duration">September 2023 - Present</span>
+                        </div>
+                        <div class="experience-content">
+                            <h4>Responsibilities</h4>
+                            <ul>
+                                <li>Provide data analysis services to small businesses and startups</li>
+                                <li>Create custom dashboards and reports for client-specific needs</li>
+                                <li>Conduct market research and competitive analysis</li>
+                                <li>Develop automated solutions for data collection and processing</li>
+                            </ul>
+                            <h4>Key Achievements</h4>
+                            <ul>
+                                <li>Served 15+ clients across various industries successfully</li>
+                                <li>Helped clients increase revenue by average of 25% through data insights</li>
+                                <li>Built reusable data analysis templates reducing project time by 30%</li>
+                            </ul>
+                            <h4>Technologies Used</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">Tableau</span>
+                                <span class="tech-tag">Excel</span>
+                                <span class="tech-tag">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Research Assistant -->
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <h3>Research Assistant</h3>
+                            <span class="experience-company">University AI Research Lab</span>
+                            <span class="experience-duration">August 2023 - December 2023</span>
+                        </div>
+                        <div class="experience-content">
+                            <h4>Responsibilities</h4>
+                            <ul>
+                                <li>Assisted in research on explainable AI and model interpretability</li>
+                                <li>Conducted literature reviews and synthesized research findings</li>
+                                <li>Implemented and benchmarked various interpretability methods</li>
+                                <li>Co-authored research paper submitted to ML conference</li>
+                            </ul>
+                            <h4>Key Achievements</h4>
+                            <ul>
+                                <li>Published paper on "Local vs Global Interpretability in Deep Learning"</li>
+                                <li>Developed novel visualization technique for model decision boundaries</li>
+                                <li>Presented research findings at university symposium</li>
+                            </ul>
+                            <h4>Technologies Used</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">PyTorch</span>
+                                <span class="tech-tag">SHAP</span>
+                                <span class="tech-tag">LIME</span>
+                                <span class="tech-tag">Matplotlib</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1: Customer Churn Prediction -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <span class="placeholder-text">Churn Prediction</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Customer Churn Prediction</h3>
+                            <p class="project-description">
+                                Developed a machine learning model to predict customer churn for a telecommunications company. 
+                                The model identifies customers at risk of leaving, enabling proactive retention strategies.
+                            </p>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <strong>Problem:</strong> High customer churn rate affecting revenue
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Dataset:</strong> Telco Customer Churn Dataset (7,043 records)
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Algorithms:</strong> Random Forest, XGBoost, Logistic Regression
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Accuracy:</strong> 87.3% (Random Forest)
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Features:</strong> Feature importance analysis, SHAP values for interpretability
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Tech Stack:</strong> Python, Scikit-learn, Pandas, Plotly
+                                </div>
+                            </div>
+                            <div class="project-challenges">
+                                <strong>Challenges:</strong> Handling imbalanced data, feature engineering from categorical variables
+                            </div>
+                            <div class="project-improvements">
+                                <strong>Future Improvements:</strong> Real-time prediction API, integration with CRM system
+                            </div>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-small">GitHub</a>
+                                <a href="#" class="btn btn-small">Documentation</a>
+                                <a href="#" class="btn btn-small">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Crime Analysis Dashboard -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <span class="placeholder-text">Crime Analysis</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Crime Analysis Dashboard</h3>
+                            <p class="project-description">
+                                Built an interactive dashboard for analyzing crime patterns across major cities. 
+                                Helps law enforcement agencies identify hotspots and allocate resources effectively.
+                            </p>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <strong>Problem:</strong> Lack of real-time crime pattern visibility
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Dataset:</strong> Chicago Crime Dataset (7M+ records)
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Algorithms:</strong> K-Means Clustering, Time Series Analysis
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Accuracy:</strong> 92% hotspot detection accuracy
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Features:</strong> Interactive maps, temporal analysis, predictive alerts
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Tech Stack:</strong> Python, Power BI, SQL, Geopandas
+                                </div>
+                            </div>
+                            <div class="project-challenges">
+                                <strong>Challenges:</strong> Processing large-scale geospatial data, real-time updates
+                            </div>
+                            <div class="project-improvements">
+                                <strong>Future Improvements:</strong> Predictive policing integration, mobile app
+                            </div>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-small">GitHub</a>
+                                <a href="#" class="btn btn-small">Documentation</a>
+                                <a href="#" class="btn btn-small">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: House Price Prediction -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <span class="placeholder-text">House Price</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>House Price Prediction</h3>
+                            <p class="project-description">
+                                Created a regression model to predict house prices based on various features. 
+                                Assists both buyers and sellers in making informed real estate decisions.
+                            </p>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <strong>Problem:</strong> Uncertainty in property valuation
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Dataset:</strong> Kaggle House Prices Dataset (1,460 records)
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Algorithms:</strong> Gradient Boosting, Linear Regression, Neural Networks
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Accuracy:</strong> RMSE: 0.12 (Gradient Boosting)
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Features:</strong> Price estimation, feature impact analysis, neighborhood comparison
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Tech Stack:</strong> Python, XGBoost, TensorFlow, Streamlit
+                                </div>
+                            </div>
+                            <div class="project-challenges">
+                                <strong>Challenges:</strong> Handling missing values, feature selection from 80+ variables
+                            </div>
+                            <div class="project-improvements">
+                                <strong>Future Improvements:</strong> Image-based property assessment, market trend integration
+                            </div>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-small">GitHub</a>
+                                <a href="#" class="btn btn-small">Documentation</a>
+                                <a href="#" class="btn btn-small">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Movie Recommendation -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <span class="placeholder-text">Movie Recommender</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Movie Recommendation System</h3>
+                            <p class="project-description">
+                                Built a collaborative filtering-based movie recommendation engine. 
+                                Provides personalized movie suggestions based on user preferences and viewing history.
+                            </p>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <strong>Problem:</strong> Information overload in content discovery
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Dataset:</strong> MovieLens Dataset (27M ratings)
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Algorithms:</strong> Matrix Factorization, Content-Based Filtering
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Accuracy:</strong> RMSE: 0.85, Precision@10: 0.72
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Features:</strong> Personalized recommendations, genre filtering, similar movies
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Tech Stack:</strong> Python, Surprise, Flask, Pandas
+                                </div>
+                            </div>
+                            <div class="project-challenges">
+                                <strong>Challenges:</strong> Cold start problem, scalability for large user base
+                            </div>
+                            <div class="project-improvements">
+                                <strong>Future Improvements:</strong> Hybrid approach, real-time learning, multi-language support
+                            </div>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-small">GitHub</a>
+                                <a href="#" class="btn btn-small">Documentation</a>
+                                <a href="#" class="btn btn-small">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Medical Disease Prediction -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <span class="placeholder-text">Disease Prediction</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Medical Disease Prediction</h3>
+                            <p class="project-description">
+                                Developed a multi-class classification model to predict diseases based on symptoms. 
+                                Aims to assist healthcare professionals in early diagnosis and treatment planning.
+                            </p>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <strong>Problem:</strong> Delayed diagnosis leading to worse outcomes
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Dataset:</strong> Symptom-Disease Dataset (5,000 records)
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Algorithms:</strong> Random Forest, SVM, Neural Networks
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Accuracy:</strong> 94.5% (Random Forest)
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Features:</strong> Symptom analysis, disease probability, doctor recommendation
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Tech Stack:</strong> Python, Scikit-learn, React, Flask
+                                </div>
+                            </div>
+                            <div class="project-challenges">
+                                <strong>Challenges:</strong> Handling class imbalance, ensuring model interpretability
+                            </div>
+                            <div class="project-improvements">
+                                <strong>Future Improvements:</strong> Integration with electronic health records, mobile app
+                            </div>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-small">GitHub</a>
+                                <a href="#" class="btn btn-small">Documentation</a>
+                                <a href="#" class="btn btn-small">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6: Stock Prediction -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <span class="placeholder-text">Stock Prediction</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Stock Price Prediction</h3>
+                            <p class="project-description">
+                                Created a time series forecasting model for stock price prediction. 
+                                Uses LSTM networks to capture temporal patterns in financial data.
+                            </p>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <strong>Problem:</strong> High volatility in financial markets
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Dataset:</strong> Yahoo Finance Data (10 years historical)
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Algorithms:</strong> LSTM, GRU, ARIMA, Prophet
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Accuracy:</strong> 78% directional accuracy
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Features:</strong> Price prediction, sentiment analysis, risk assessment
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Tech Stack:</strong> Python, TensorFlow, Keras, yfinance
+                                </div>
+                            </div>
+                            <div class="project-challenges">
+                                <strong>Challenges:</strong> Market noise, non-stationarity, external factors
+                            </div>
+                            <div class="project-improvements">
+                                <strong>Future Improvements:</strong> Multi-factor model, portfolio optimization, real-time trading signals
+                            </div>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-small">GitHub</a>
+                                <a href="#" class="btn btn-small">Documentation</a>
+                                <a href="#" class="btn btn-small">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 7: Spam Detection -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <span class="placeholder-text">Spam Detection</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Email Spam Detection</h3>
+                            <p class="project-description">
+                                Built a natural language processing model to classify emails as spam or legitimate. 
+                                Helps users filter unwanted emails and improve productivity.
+                            </p>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <strong>Problem:</strong> Spam emails flooding inboxes
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Dataset:</strong> Enron Spam Dataset (17,000 emails)
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Algorithms:</strong> Naive Bayes, SVM, BERT
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Accuracy:</strong> 98.2% (BERT)
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Features:</strong> Real-time classification, spam probability, custom filters
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Tech Stack:</strong> Python, Transformers, Scikit-learn, NLTK
+                                </div>
+                            </div>
+                            <div class="project-challenges">
+                                <strong>Challenges:</strong> Adversarial spam, evolving spam patterns
+                            </div>
+                            <div class="project-improvements">
+                                <strong>Future Improvements:</strong> Phishing detection, multi-language support, browser extension
+                            </div>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-small">GitHub</a>
+                                <a href="#" class="btn btn-small">Documentation</a>
+                                <a href="#" class="btn btn-small">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 8: Resume Screening -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <span class="placeholder-text">Resume Screening</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Automated Resume Screening</h3>
+                            <p class="project-description">
+                                Developed an NLP-based system to automatically screen and rank resumes based on job descriptions. 
+                                Streamlines the recruitment process for HR departments.
+                            </p>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <strong>Problem:</strong> Time-consuming manual resume screening
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Dataset:</strong> Custom resume dataset (2,500 resumes)
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Algorithms:</strong> TF-IDF, Cosine Similarity, BERT Embeddings
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Accuracy:</strong> 89% match accuracy
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Features:</strong> Resume parsing, skill extraction, ranking system
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Tech Stack:</strong> Python, spaCy, Transformers, Flask
+                                </div>
+                            </div>
+                            <div class="project-challenges">
+                                <strong>Challenges:</strong> Resume format variability, context understanding
+                            </div>
+                            <div class="project-improvements">
+                                <strong>Future Improvements:</strong> Video interview analysis, bias detection, ATS integration
+                            </div>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-small">GitHub</a>
+                                <a href="#" class="btn btn-small">Documentation</a>
+                                <a href="#" class="btn btn-small">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 9: Sentiment Analysis -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <span class="placeholder-text">Sentiment Analysis</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Sentiment Analysis Engine</h3>
+                            <p class="project-description">
+                                Built a comprehensive sentiment analysis system for social media and customer reviews. 
+                                Helps businesses understand customer opinions and brand perception.
+                            </p>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <strong>Problem:</strong> Understanding customer sentiment at scale
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Dataset:</strong> Twitter Sentiment Dataset (1.6M tweets)
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Algorithms:</strong> RoBERTa, VADER, LSTM
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Accuracy:</strong> 91.5% (RoBERTa)
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Features:</strong> Multi-language support, emotion detection, trend analysis
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Tech Stack:</strong> Python, HuggingFace, Streamlit, Redis
+                                </div>
+                            </div>
+                            <div class="project-challenges">
+                                <strong>Challenges:</strong> Sarcasm detection, context-dependent sentiment
+                            </div>
+                            <div class="project-improvements">
+                                <strong>Future Improvements:</strong> Aspect-based sentiment, real-time monitoring dashboard
+                            </div>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-small">GitHub</a>
+                                <a href="#" class="btn btn-small">Documentation</a>
+                                <a href="#" class="btn btn-small">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 10: Sales Dashboard -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <span class="placeholder-text">Sales Dashboard</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Sales Analytics Dashboard</h3>
+                            <p class="project-description">
+                                Created an interactive sales analytics dashboard for e-commerce businesses. 
+                                Provides real-time insights into sales performance, customer behavior, and inventory.
+                            </p>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <strong>Problem:</strong> Lack of real-time sales visibility
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Dataset:</strong> E-commerce Sales Data (500K transactions)
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Algorithms:</strong> Time Series Forecasting, Cohort Analysis
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Accuracy:</strong> 85% forecast accuracy
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Features:</strong> Real-time metrics, predictive analytics, inventory alerts
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Tech Stack:</strong> Python, Power BI, SQL, Azure
+                                </div>
+                            </div>
+                            <div class="project-challenges">
+                                <strong>Challenges:</strong> Real-time data processing, dashboard performance
+                            </div>
+                            <div class="project-improvements">
+                                <strong>Future Improvements:</strong> Mobile app, automated reporting, AI-driven insights
+                            </div>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-small">GitHub</a>
+                                <a href="#" class="btn btn-small">Documentation</a>
+                                <a href="#" class="btn btn-small">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 11: IPL Dashboard -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <span class="placeholder-text">IPL Analytics</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>IPL Cricket Analytics Dashboard</h3>
+                            <p class="project-description">
+                                Built a comprehensive analytics dashboard for Indian Premier League cricket data. 
+                                Analyzes player performance, team statistics, and match predictions.
+                            </p>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <strong>Problem:</strong> Complex cricket data analysis needs
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Dataset:</strong> IPL Dataset (2008-2024, 950+ matches)
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Algorithms:</strong> Random Forest, Linear Regression
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Accuracy:</strong> 72% match prediction accuracy
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Features:</strong> Player stats, team comparison, win probability
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Tech Stack:</strong> Python, Plotly Dash, Pandas, PostgreSQL
+                                </div>
+                            </div>
+                            <div class="project-challenges">
+                                <strong>Challenges:</strong> Handling missing data, complex cricket metrics
+                            </div>
+                            <div class="project-improvements">
+                                <strong>Future Improvements:</strong> Real-time match updates, fantasy league integration
+                            </div>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-small">GitHub</a>
+                                <a href="#" class="btn btn-small">Documentation</a>
+                                <a href="#" class="btn btn-small">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 12: Fake News Detection -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <span class="placeholder-text">Fake News Detection</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Fake News Detection System</h3>
+                            <p class="project-description">
+                                Developed a machine learning system to detect fake news articles. 
+                                Combines content analysis with source credibility assessment.
+                            </p>
+                            <div class="project-details">
+                                <div class="detail-item">
+                                    <strong>Problem:</strong> Spread of misinformation affecting society
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Dataset:</strong> Fake News Dataset (20,000 articles)
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Algorithms:</strong> BERT, XLNet, PassiveAggressiveClassifier
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Accuracy:</strong> 93.8% (BERT)
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Features:</strong> Article classification, credibility score, source verification
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Tech Stack:</strong> Python, Transformers, Streamlit, News API
+                                </div>
+                            </div>
+                            <div class="project-challenges">
+                                <strong>Challenges:</strong> Subtle misinformation, evolving fake news patterns
+                            </div>
+                            <div class="project-improvements">
+                                <strong>Future Improvements:</strong> Image/video analysis, multi-platform monitoring, browser extension
+                            </div>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-small">GitHub</a>
+                                <a href="#" class="btn btn-small">Documentation</a>
+                                <a href="#" class="btn btn-small">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research" class="research-section">
+            <div class="container">
+                <h2 class="section-title">Research & Publications</h2>
+                <div class="research-grid">
+                    <!-- Research 1: Explainable AI -->
+                    <article class="research-card">
+                        <h3>Explainable AI: Bridging the Gap Between Accuracy and Interpretability</h3>
+                        <div class="research-meta">
+                            <span class="research-type">Review Paper</span>
+                            <span class="research-date">2024</span>
+                        </div>
+                        <p class="research-summary">
+                            This research explores the critical need for explainable artificial intelligence in high-stakes 
+                            applications such as healthcare, finance, and criminal justice. The paper comprehensively reviews 
+                            current state-of-the-art interpretability methods, including LIME, SHAP, and attention mechanisms, 
+                            and proposes a framework for selecting appropriate explanation techniques based on use case requirements.
+                        </p>
+                        <div class="research-sections">
+                            <div class="research-section">
+                                <h4>Applications</h4>
+                                <p>
+                                    Medical diagnosis systems where doctors need to understand model decisions, credit scoring 
+                                    systems requiring regulatory compliance, and autonomous vehicles needing safety validation.
+                                </p>
+                            </div>
+                            <div class="research-section">
+                                <h4>Research Methodology</h4>
+                                <p>
+                                    Comparative analysis of 15+ interpretability methods across multiple datasets, evaluation 
+                                    of explanation quality through human studies, and development of quantitative metrics for 
+                                    measuring interpretability.
+                                </p>
+                            </div>
+                            <div class="research-section">
+                                <h4>Conclusion</h4>
+                                <p>
+                                    The research concludes that no single interpretability method works universally. A hybrid 
+                                    approach combining local and global explanations, tailored to specific domain requirements, 
+                                    provides the best balance between model performance and interpretability.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Research 2: Responsible AI -->
+                    <article class="research-card">
+                        <h3>Responsible AI: Ethical Considerations in Machine Learning Systems</h3>
+                        <div class="research-meta">
+                            <span class="research-type">Position Paper</span>
+                            <span class="research-date">2024</span>
+                        </div>
+                        <p class="research-summary">
+                            This position paper addresses the ethical challenges in developing and deploying machine learning 
+                            systems. It examines issues of bias, fairness, accountability, and transparency, and proposes guidelines 
+                            for responsible AI development that practitioners can follow in their work.
+                        </p>
+                        <div class="research-sections">
+                            <div class="research-section">
+                                <h4>Applications</h4>
+                                <p>
+                                    Hiring systems to prevent discrimination, predictive policing to avoid racial bias, and 
+                                    content moderation systems to ensure fair treatment across different user groups.
+                                </p>
+                            </div>
+                            <div class="research-section">
+                                <h4>Research Methodology</h4>
+                                <p>
+                                    Case study analysis of AI system failures, interviews with industry practitioners, and 
+                                    development of a comprehensive ethical framework for ML lifecycle management.
+                                </p>
+                            </div>
+                            <div class="research-section">
+                                <h4>Conclusion</h4>
+                                <p>
+                                    Responsible AI requires proactive measures throughout the ML lifecycle, from data collection 
+                                    to model deployment. Organizations must establish ethical review boards and implement 
+                                    continuous monitoring for unintended consequences.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Research 3: Feature Engineering -->
+                    <article class="research-card">
+                        <h3>Automated Feature Engineering: The Next Frontier in Machine Learning</h3>
+                        <div class="research-meta">
+                            <span class="research-type">Technical Paper</span>
+                            <span class="research-date">2023</span>
+                        </div>
+                        <p class="research-summary">
+                            This research investigates automated feature engineering techniques and their impact on model performance. 
+                            The paper presents a novel approach combining domain knowledge with automated feature generation, 
+                                    achieving significant improvements in predictive accuracy across multiple domains.
+                        </p>
+                        <div class="research-sections">
+                            <div class="research-section">
+                                <h4>Applications</h4>
+                                <p>
+                                    Customer churn prediction where domain-specific features are crucial, fraud detection with 
+                                    complex transaction patterns, and predictive maintenance in industrial settings.
+                                </p>
+                            </div>
+                            <div class="research-section">
+                                <h4>Research Methodology</h4>
+                                <p>
+                                    Development of an automated feature engineering framework, empirical evaluation on 10 public 
+                                    datasets, and comparison with manual feature engineering by domain experts.
+                                </p>
+                            </div>
+                            <div class="research-section">
+                                <h4>Conclusion</h4>
+                                <p>
+                                    Automated feature engineering can match or exceed manual feature engineering in many cases, 
+                                    but works best when combined with human domain expertise. The proposed framework achieves 
+                                    an average 15% improvement in model accuracy.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Research 4: Future of AI -->
+                    <article class="research-card">
+                        <h3>The Future of AI: Trends and Predictions for the Next Decade</h3>
+                        <div class="research-meta">
+                            <span class="research-type">Survey Paper</span>
+                            <span class="research-date">2023</span>
+                        </div>
+                        <p class="research-summary">
+                            This survey paper examines emerging trends in artificial intelligence and makes predictions about 
+                            future developments. It covers areas such as generative AI, reinforcement learning, edge AI, and 
+                            AI safety, providing insights into how these technologies will evolve.
+                        </p>
+                        <div class="research-sections">
+                            <div class="research-section">
+                                <h4>Applications</h4>
+                                <p>
+                                    Strategic planning for organizations investing in AI, guidance for researchers choosing 
+                                    focus areas, and policy development for AI governance and regulation.
+                                </p>
+                            </div>
+                            <div class="research-section">
+                                <h4>Research Methodology</h4>
+                                <p>
+                                    Literature review of recent AI research, interviews with 50+ AI researchers and practitioners, 
+                                    and analysis of patent filings and investment trends in AI startups.
+                                </p>
+                            </div>
+                            <div class="research-section">
+                                <h4>Conclusion</h4>
+                                <p>
+                                    The next decade will see AI become more ubiquitous, efficient, and specialized. Key trends 
+                                    include the rise of foundation models, increased focus on AI safety, and democratization 
+                                    of AI tools through better abstraction layers.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements-section">
+            <div class="container">
+                <h2 class="section-title">Achievements</h2>
+                <div class="achievements-grid">
+                    <!-- Hackathons -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🏆</div>
+                        <h3>Hackathon Winner</h3>
+                        <p class="achievement-title">Smart India Hackathon 2024</p>
+                        <p class="achievement-description">
+                            Led a team of 4 to develop an AI-powered agricultural yield prediction system. 
+                            Won first place among 500+ teams for innovative use of satellite imagery and machine learning.
+                        </p>
+                        <span class="achievement-date">March 2024</span>
+                    </div>
+
+                    <!-- Kaggle -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🥈</div>
+                        <h3>Kaggle Competition</h3>
+                        <p class="achievement-title">Silver Medal - Titanic ML Competition</p>
+                        <p class="achievement-description">
+                            Achieved top 5% ranking in the classic Titanic machine learning competition. 
+                            Used ensemble methods and extensive feature engineering to achieve 82% accuracy.
+                        </p>
+                        <span class="achievement-date">February 2024</span>
+                    </div>
+
+                    <!-- Research -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon">📄</div>
+                        <h3>Research Publication</h3>
+                        <p class="achievement-title">IEEE Conference Publication</p>
+                        <p class="achievement-description">
+                            Published research paper on "Explainable AI in Healthcare" at IEEE International Conference 
+                            on Healthcare Informatics. Paper received positive reviews from the research community.
+                        </p>
+                        <span class="achievement-date">January 2024</span>
+                    </div>
+
+                    <!-- Coding Challenge -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon">💻</div>
+                        <h3>Coding Competition</h3>
+                        <p class="achievement-title">Google Kick Start Round Qualifier</p>
+                        <p class="achievement-description">
+                            Successfully qualified for Google Kick Start coding competition by solving complex 
+                            algorithmic problems. Demonstrated strong problem-solving and coding skills under time pressure.
+                        </p>
+                        <span class="achievement-date">November 2023</span>
+                    </div>
+
+                    <!-- Open Source -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🌟</div>
+                        <h3>Open Source Contributor</h3>
+                        <p class="achievement-title">Scikit-learn Contributor</p>
+                        <p class="achievement-description">
+                            Contributed bug fixes and documentation improvements to the Scikit-learn library. 
+                            Pull requests were merged into the main branch, benefiting the entire ML community.
+                        </p>
+                        <span class="achievement-date">October 2023</span>
+                    </div>
+
+                    <!-- Academic -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🎓</div>
+                        <h3>Academic Excellence</h3>
+                        <p class="achievement-title">Department Gold Medalist</p>
+                        <p class="achievement-description">
+                            Awarded gold medal for maintaining the highest CGPA in the Computer Science department 
+                            for three consecutive years. Consistent academic performance throughout the program.
+                        </p>
+                        <span class="achievement-date">September 2023</span>
+                    </div>
+
+                    <!-- Data Science Competition -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon">📊</div>
+                        <h3>Data Science Challenge</h3>
+                        <p class="achievement-title">Analytics Vidhya Hackathon</p>
+                        <p class="achievement-description">
+                            Secured 3rd place in national-level data science hackathon focused on predicting 
+                            customer lifetime value. Developed innovative feature engineering approach.
+                        </p>
+                        <span class="achievement-date">August 2023</span>
+                    </div>
+
+                    <!-- Scholarship -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon">💰</div>
+                        <h3>Merit Scholarship</h3>
+                        <p class="achievement-title">National Merit Scholarship</p>
+                        <p class="achievement-description">
+                            Awarded prestigious National Merit Scholarship for outstanding academic performance 
+                            and extracurricular achievements in the field of technology and innovation.
+                        </p>
+                        <span class="achievement-date">July 2023</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications-section">
+            <div class="container">
+                <h2 class="section-title">Certifications</h2>
+                <div class="certifications-grid">
+                    <!-- Certification 1 -->
+                    <div class="certification-card">
+                        <div class="certification-icon">📜</div>
+                        <h3>Google Data Analytics Professional Certificate</h3>
+                        <p class="certification-organization">Google</p>
+                        <div class="certification-details">
+                            <p><strong>Credential ID:</strong> GDA-2024-78542</p>
+                            <p><strong>Year:</strong> 2024</p>
+                            <p class="certification-description">
+                                Comprehensive course covering data analysis process, from asking questions to communicating 
+                                insights. Hands-on experience with spreadsheets, SQL, and Tableau.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Certification 2 -->
+                    <div class="certification-card">
+                        <div class="certification-icon">📜</div>
+                        <h3>IBM Data Science Professional Certificate</h3>
+                        <p class="certification-organization">IBM</p>
+                        <div class="certification-details">
+                            <p><strong>Credential ID:</strong> IBM-DS-2024-45678</p>
+                            <p><strong>Year:</strong> 2024</p>
+                            <p class="certification-description">
+                                Nine-course program covering data science methodology, Python programming, databases, 
+                                data visualization, machine learning, and capstone project.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Certification 3 -->
+                    <div class="certification-card">
+                        <div class="certification-icon">📜</div>
+                        <h3>Machine Learning Specialization</h3>
+                        <p class="certification-organization">Stanford University (Coursera)</p>
+                        <div class="certification-details">
+                            <p><strong>Credential ID:</strong> ML-SPEC-2024-12345</p>
+                            <p><strong>Year:</strong> 2024</p>
+                            <p class="certification-description">
+                                Comprehensive machine learning course covering supervised learning, unsupervised learning, 
+                                best practices, and neural networks taught by Andrew Ng.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Certification 4 -->
+                    <div class="certification-card">
+                        <div class="certification-icon">📜</div>
+                        <h3>Deep Learning Specialization</h3>
+                        <p class="certification-organization">DeepLearning.AI</p>
+                        <div class="certification-details">
+                            <p><strong>Credential ID:</strong> DL-SPEC-2023-98765</p>
+                            <p><strong>Year:</strong> 2023</p>
+                            <p class="certification-description">
+                                Five-course specialization covering neural networks, tuning, structuring ML projects, 
+                                convolutional networks, and sequence models.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Certification 5 -->
+                    <div class="certification-card">
+                        <div class="certification-icon">📜</div>
+                        <h3>Python for Data Science and Machine Learning Bootcamp</h3>
+                        <p class="certification-organization">Udemy</p>
+                        <div class="certification-details">
+                            <p><strong>Credential ID:</strong> UC-PYTHON-2023-54321</p>
+                            <p><strong>Year:</strong> 2023</p>
+                            <p class="certification-description">
+                                Intensive bootcamp covering Python programming, NumPy, Pandas, Matplotlib, Seaborn, 
+                                machine learning, and deep learning with practical projects.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Certification 6 -->
+                    <div class="certification-card">
+                        <div class="certification-icon">📜</div>
+                        <h3>SQL for Data Science</h3>
+                        <p class="certification-organization">University of California, Davis (Coursera)</p>
+                        <div class="certification-details">
+                            <p><strong>Credential ID:</strong> SQL-DS-2023-24680</p>
+                            <p><strong>Year:</strong> 2023</p>
+                            <p class="certification-description">
+                                Comprehensive SQL course covering database design, SQL commands, data analysis, 
+                                and database management for data science applications.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Certification 7 -->
+                    <div class="certification-card">
+                        <div class="certification-icon">📜</div>
+                        <h3>Microsoft Power BI Data Analyst</h3>
+                        <p class="certification-organization">Microsoft</p>
+                        <div class="certification-details">
+                            <p><strong>Credential ID:</strong> PL-300-2023-13579</p>
+                            <p><strong>Year:</strong> 2023</p>
+                            <p class="certification-description">
+                                Professional certification demonstrating expertise in data visualization, report 
+                                creation, dashboard development, and data analysis using Power BI.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Certification 8 -->
+                    <div class="certification-card">
+                        <div class="certification-icon">📜</div>
+                        <h3>TensorFlow Developer Certificate</h3>
+                        <p class="certification-organization">Google</p>
+                        <div class="certification-details">
+                            <p><strong>Credential ID:</strong> TF-DEV-2023-86420</p>
+                            <p><strong>Year:</strong> 2023</p>
+                            <p class="certification-description">
+                                Certification validating ability to build, train, and deploy machine learning models 
+                                using TensorFlow. Covers image recognition, natural language processing, and time series.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Certification 9 -->
+                    <div class="certification-card">
+                        <div class="certification-icon">📜</div>
+                        <h3>Azure AI Engineer Associate</h3>
+                        <p class="certification-organization">Microsoft</p>
+                        <div class="certification-details">
+                            <p><strong>Credential ID:</strong> AI-102-2023-11235</p>
+                            <p><strong>Year:</strong> 2023</p>
+                            <p class="certification-description">
+                                Certification demonstrating skills in building, managing, and deploying AI solutions 
+                                using Azure Cognitive Services, Azure Bot Service, and Azure Machine Learning.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Certification 10 -->
+                    <div class="certification-card">
+                        <div class="certification-icon">📜</div>
+                        <h3>Prompt Engineering for ChatGPT</h3>
+                        <p class="certification-organization">Vanderbilt University (Coursera)</p>
+                        <div class="certification-details">
+                            <p><strong>Credential ID:</strong> PE-CHATGPT-2024-97531</p>
+                            <p><strong>Year:</strong> 2024</p>
+                            <p class="certification-description">
+                                Specialized course on prompt engineering techniques for Large Language Models, 
+                                covering prompt patterns, chain-of-thought prompting, and advanced applications.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blogs" class="blogs-section">
+            <div class="container">
+                <h2 class="section-title">Blog Articles</h2>
+                <div class="blogs-grid">
+                    <!-- Blog 1 -->
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <div class="image-placeholder">
+                                <span class="placeholder-text">Regression</span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <h3>Understanding Regression Analysis: A Complete Guide</h3>
+                            <p class="blog-description">
+                                Comprehensive guide to regression analysis covering linear regression, polynomial regression, 
+                                regularization techniques, and practical applications in data science.
+                            </p>
+                            <a href="#" class="btn btn-small">Read More</a>
+                        </div>
+                    </article>
+
+                    <!-- Blog 2 -->
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <div class="image-placeholder">
+                                <span class="placeholder-text">Random Forest</span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <h3>Random Forest: When and How to Use It</h3>
+                            <p class="blog-description">
+                                Deep dive into Random Forest algorithm, understanding ensemble learning, hyperparameter tuning, 
+                                and real-world use cases where Random Forest outperforms other algorithms.
+                            </p>
+                            <a href="#" class="btn btn-small">Read More</a>
+                        </div>
+                    </article>
+
+                    <!-- Blog 3 -->
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <div class="image-placeholder">
+                                <span class="placeholder-text">Feature Engineering</span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <h3>The Art of Feature Engineering in Machine Learning</h3>
+                            <p class="blog-description">
+                                Master feature engineering techniques including transformation, encoding, scaling, and 
+                                domain-specific feature creation to improve model performance significantly.
+                            </p>
+                            <a href="#" class="btn btn-small">Read More</a>
+                        </div>
+                    </article>
+
+                    <!-- Blog 4 -->
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <div class="image-placeholder">
+                                <span class="placeholder-text">Prompt Engineering</span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <h3>Prompt Engineering: Getting the Best from LLMs</h3>
+                            <p class="blog-description">
+                                Learn effective prompt engineering strategies for Large Language Models, including 
+                                chain-of-thought prompting, few-shot learning, and advanced prompting techniques.
+                            </p>
+                            <a href="#" class="btn btn-small">Read More</a>
+                        </div>
+                    </article>
+
+                    <!-- Blog 5 -->
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <div class="image-placeholder">
+                                <span class="placeholder-text">Pandas</span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <h3>Mastering Pandas for Data Analysis</h3>
+                            <p class="blog-description">
+                                Complete guide to Pandas library covering data manipulation, cleaning, aggregation, 
+                                and advanced techniques for efficient data analysis in Python.
+                            </p>
+                            <a href="#" class="btn btn-small">Read More</a>
+                        </div>
+                    </article>
+
+                    <!-- Blog 6 -->
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <div class="image-placeholder">
+                                <span class="placeholder-text">Future of AI</span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <h3>The Future of AI: Trends to Watch in 2026</h3>
+                            <p class="blog-description">
+                                Explore emerging AI trends including multimodal AI, edge computing, AI agents, 
+                                and the evolving landscape of artificial intelligence applications.
+                            </p>
+                            <a href="#" class="btn btn-small">Read More</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume-section">
+            <div class="container">
+                <h2 class="section-title">Resume</h2>
+                <div class="resume-container">
+                    <div class="resume-preview">
+                        <div class="resume-header">
+                            <h3>Arpit Ekka</h3>
+                            <p class="resume-title">Aspiring Data Scientist</p>
+                            <div class="resume-contact">
+                                <p>📧 arpit.ekka@email.com</p>
+                                <p>📱 +91 98765 43210</p>
+                                <p>📍 Lucknow, Uttar Pradesh, India</p>
+                                <p>🔗 linkedin.com/in/arpitekka</p>
+                                <p>🐙 github.com/arpitekka</p>
+                            </div>
+                        </div>
+                        <div class="resume-body">
+                            <div class="resume-section">
+                                <h4>Professional Summary</h4>
+                                <p>
+                                    Aspiring Data Scientist with strong foundation in machine learning, statistics, and programming. 
+                                    Experienced in developing predictive models, data visualization, and building end-to-end data 
+                                    science solutions. Passionate about applying AI to solve real-world problems and committed to 
+                                    continuous learning in the rapidly evolving field of data science.
+                                </p>
+                            </div>
+                            <div class="resume-section">
+                                <h4>Technical Skills</h4>
+                                <p>
+                                    <strong>Languages:</strong> Python, SQL, R, C++<br>
+                                    <strong>ML/DL:</strong> Scikit-learn, TensorFlow, PyTorch, Keras<br>
+                                    <strong>Data Analysis:</strong> Pandas, NumPy, Excel, Power BI, Tableau<br>
+                                    <strong>Deployment:</strong> Flask, FastAPI, Docker, Git<br>
+                                    <strong>Cloud:</strong> AWS, Azure, Google Cloud
+                                </p>
+                            </div>
+                            <div class="resume-section">
+                                <h4>Experience</h4>
+                                <p>
+                                    <strong>Data Science Intern</strong> - TechSolutions Inc. (Jun-Aug 2024)<br>
+                                    <strong>Machine Learning Intern</strong> - DataDriven Analytics (Jan-May 2024)<br>
+                                    <strong>Freelance Data Analyst</strong> - Self-Employed (Sep 2023-Present)<br>
+                                    <strong>Research Assistant</strong> - University AI Research Lab (Aug-Dec 2023)
+                                </p>
+                            </div>
+                            <div class="resume-section">
+                                <h4>Education</h4>
+                                <p>
+                                    <strong>B.Tech in Computer Science</strong> - IET Lucknow (2021-2025) - CGPA: 8.5/10<br>
+                                    <strong>Higher Secondary</strong> - DPS Varanasi (2019-2021) - 92%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume-buttons">
+                        <a href="#" class="btn btn-primary">Download Resume (PDF)</a>
+                        <a href="#" class="btn btn-secondary">View Full Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <p class="contact-intro">
+                            I'm always open to discussing new opportunities, interesting projects, or collaborations 
+                            in the field of data science. Feel free to reach out!
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-icon">📧</span>
+                                <div>
+                                    <strong>Email</strong>
+                                    <p>arpit.ekka@email.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📱</span>
+                                <div>
+                                    <strong>Phone</strong>
+                                    <p>+91 98765 43210</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <div>
+                                    <strong>Location</strong>
+                                    <p>Lucknow, Uttar Pradesh, India</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">🔗</span>
+                                <div>
+                                    <strong>LinkedIn</strong>
+                                    <p>linkedin.com/in/arpitekka</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">🐙</span>
+                                <div>
+                                    <strong>GitHub</strong>
+                                    <p>github.com/arpitekka</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">🎯</span>
+                                <div>
+                                    <strong>Kaggle</strong>
+                                    <p>kaggle.com/arpitekka</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Send a Message</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="How can I help you?" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Social Links</h3>
+                    <ul>
+                        <li><a href="https://github.com/arpitekka">GitHub</a></li>
+                        <li><a href="https://linkedin.com/in/arpitekka">LinkedIn</a></li>
+                        <li><a href="https://kaggle.com/arpitekka">Kaggle</a></li>
+                        <li><a href="mailto:arpit.ekka@email.com">Email</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📧 arpit.ekka@email.com</p>
+                    <p>📱 +91 98765 43210</p>
+                    <p>📍 Lucknow, Uttar Pradesh, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Arpit Ekka. All rights reserved.</p>
+                <a href="#home" class="back-to-top">Back to Top ↑</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
