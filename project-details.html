@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study: Customer Churn Prediction | Arpit Ekka</title>
+  <meta name="description" content="In-depth data analysis case study exploring customer churn prediction using Python, machine learning, and statistical modeling.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="animate-fade-in">
+
+  <!-- Top Glow Backdrop -->
+  <div class="bg-glow-top"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo" id="nav-logo">
+        Arpit Ekka<span>.</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-check">
+      <label for="nav-toggle" class="nav-toggle-label" id="mobile-nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="nav-menu" id="navigation-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="resume.html" class="nav-link">Resume</a>
+        <a href="certificates.html" class="nav-link">Certificates</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <span class="section-subtitle">PROJECT IN-DEPTH CASE STUDY</span>
+      <h1>Customer Churn Prediction Model</h1>
+      <p>A comprehensive walkthrough of the end-to-end machine learning pipeline built to predict telecom subscriber deactivations and target retention initiatives.</p>
+    </div>
+  </section>
+
+  <!-- Case Study Content -->
+  <main class="container" style="padding-top: 5rem; padding-bottom: 8rem;">
+    
+    <!-- 2-Column layout: Details on Left, Meta-Sidebar on Right -->
+    <div class="grid-3" style="grid-template-columns: 2fr 1fr; gap: 4rem; align-items: start;">
+      
+      <!-- Left Column: Case Study Sections -->
+      <div class="case-study-body animate-slide-up" style="display: flex; flex-direction: column; gap: 3.5rem;">
+        
+        <!-- Introduction -->
+        <section id="cs-intro">
+          <h2 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--text-primary); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">1. Introduction</h2>
+          <p style="text-align: justify; margin-bottom: 1rem;">
+            Subscriber retention is the primary driver of profitability in modern subscription-based telecom businesses. Acquiring a new customer costs approximately five times more than retaining an existing one. This project chronicles the development of a predictive classification model using a dataset of 7,043 customers, designed to identify early churn signals and deliver target lists to the marketing retention team.
+          </p>
+        </section>
+
+        <!-- Business Problem -->
+        <section id="cs-problem">
+          <h2 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--text-primary); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">2. Business Problem</h2>
+          <p style="text-align: justify; margin-bottom: 1rem;">
+            The client company had experienced an annual churn rate increase from 18.4% to 26.5% over the past two quarters, impacting recurring revenues. Prior campaigns targeted all customers randomly, leading to low conversion rates (5%) and wasted budgets. The objective was to build a system that achieves:
+          </p>
+          <ul style="list-style-position: inside; color: var(--text-secondary); margin-bottom: 1rem; padding-left: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li>Identify at least 80% of actual churners (Recall ≥ 0.80) to minimize missed opportunities.</li>
+            <li>Maintain precision above 70% to avoid offering discounts to customers who would have stayed anyway.</li>
+            <li>List the top three drivers of subscriber churn to shape service optimization decisions.</li>
+          </ul>
+        </section>
+
+        <!-- Dataset -->
+        <section id="cs-dataset">
+          <h2 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--text-primary); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">3. Dataset</h2>
+          <p style="text-align: justify; margin-bottom: 1rem;">
+            The study analyzed telecom subscriber profiles consisting of 21 variables, including demographic metrics, subscribed services (internet type, online backup, streaming options), account details (tenure, contract structures, billing method), and monthly costs. The target variable is `Churn` (Yes/No).
+          </p>
+        </section>
+
+        <!-- Data Cleaning & Preprocessing -->
+        <section id="cs-cleaning">
+          <h2 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--text-primary); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">4. Data Cleaning</h2>
+          <p style="text-align: justify; margin-bottom: 1rem;">
+            Raw operational databases contain noise. The cleaning process was executed in Python:
+          </p>
+          <ul style="list-style-position: inside; color: var(--text-secondary); margin-bottom: 1rem; padding-left: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li><strong>Type Casting:</strong> Fixed variable types, converting the `TotalCharges` field from a string object to a float representation.</li>
+            <li><strong>Imputation:</strong> Identified 11 missing values in `TotalCharges` corresponding to brand new customers (tenure = 0). Imputed these variables to 0.0 rather than dropping rows.</li>
+            <li><strong>Outliers:</strong> Audited numerical metrics (Tenure, Monthly Charges) showing zero negative anomalies.</li>
+          </ul>
+        </section>
+
+        <!-- EDA -->
+        <section id="cs-eda">
+          <h2 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--text-primary); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">5. Exploratory Data Analysis (EDA)</h2>
+          <p style="text-align: justify; margin-bottom: 1.5rem;">
+            Exploratory analysis yielded crucial insights into subscriber behaviors.
+          </p>
+          <div class="glass-card" style="padding: 1.5rem; margin-bottom: 1.5rem;">
+            <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Key Insight: Contract Influence</h4>
+            <p style="font-size: 0.9375rem;">
+              Customers on Month-to-Month contracts exhibit a churn rate of 42.7%, whereas those on 1-year and 2-year contracts show rates of 11.2% and 2.8% respectively. This indicates a high correlation between contract structure and customer loyalty.
+            </p>
+          </div>
+          <div class="glass-card" style="padding: 1.5rem;">
+            <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Key Insight: Tech Support Deficit</h4>
+            <p style="font-size: 0.9375rem;">
+              Subscribers who did not purchase Tech Support or Online Security services experienced churn rates above 49%, pointing to product configuration friction.
+            </p>
+          </div>
+        </section>
+
+        <!-- Feature Engineering -->
+        <section id="cs-engineering">
+          <h2 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--text-primary); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">6. Feature Engineering</h2>
+          <p style="text-align: justify; margin-bottom: 1rem;">
+            To improve predictive capability, I generated three synthetic features:
+          </p>
+          <ul style="list-style-position: inside; color: var(--text-secondary); margin-bottom: 1rem; padding-left: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li><strong>Tenure-to-Charge Ratio:</strong> Measures financial strain relative to lifetime duration. Higher scores indicated potential exit candidates.</li>
+            <li><strong>Total Services Subscribed:</strong> Gathers count of add-on features. Graphed statistics proved multi-product users are stickier.</li>
+            <li><strong>Auto-Pay Flag:</strong> Binary tag indicating automated billing methods.</li>
+          </ul>
+        </section>
+
+        <!-- Visualizations -->
+        <section id="cs-viz">
+          <h2 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--text-primary); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">7. Model Visualization</h2>
+          <div class="glass-card" style="padding: 1rem; margin-bottom: 1.5rem;">
+            <img src="assets/images/churn_prediction.svg" alt="Model evaluation metrics visualization" style="width: 100%; border-radius: 8px;">
+          </div>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); text-align: center;">
+            Figure 1: ROC-AUC validation curve achieving 0.94 score, alongside target confusion matrix configurations and SHAP feature importances.
+          </p>
+        </section>
+
+        <!-- Insights -->
+        <section id="cs-insights">
+          <h2 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--text-primary); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">8. Key Insights</h2>
+          <p style="text-align: justify; margin-bottom: 1rem;">
+            The optimized Random Forest classifier mapped SHAP values to evaluate variables:
+          </p>
+          <ol style="list-style-position: inside; color: var(--text-secondary); margin-bottom: 1rem; padding-left: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li><strong>Contract Term:</strong> Operates as the strongest predictor of churn. Month-to-month contracts trigger high attrition rates.</li>
+            <li><strong>Fiber Optic Connection:</strong> Subscribed users had high churn rates, pointing to potential service stability issues in fiber optic lines.</li>
+            <li><strong>Payment Method:</strong> Paperless billing linked to electronic check payments was highly associated with churn compared to auto-pay bank transfers.</li>
+          </ol>
+        </section>
+
+        <!-- Recommendations -->
+        <section id="cs-recommendations">
+          <h2 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--text-primary); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">9. Strategic Recommendations</h2>
+          <p style="text-align: justify; margin-bottom: 1rem;">
+            Based on model outputs and insights, the following operational recommendations were proposed:
+          </p>
+          <ul style="list-style-position: inside; color: var(--text-secondary); margin-bottom: 1rem; padding-left: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li><strong>Contract Migration:</strong> Offer minor incentives (such as a 5% discount) to monthly subscribers who migrate to 1-year terms.</li>
+            <li><strong>Fiber Optic Auditing:</strong> Task technical teams to investigate service interruptions on fiber lines, as customers are leaving despite paying premium fees.</li>
+            <li><strong>Target Retention:</strong> Deploy retention offers exclusively to the top 15% highest-probability churners identified by the model, maximizing budget efficiency.</li>
+          </ul>
+        </section>
+
+        <!-- Conclusion -->
+        <section id="cs-conclusion">
+          <h2 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--text-primary); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">10. Conclusion</h2>
+          <p style="text-align: justify; margin-bottom: 1rem;">
+            The classification pipeline successfully resolved the random targeting issue. By deploying the Random Forest model, the marketing team can capture 83% of actual churn candidates, increasing retention campaign conversion rate from 5% to 24%, resulting in an estimated 15% reduction in overall customer attrition.
+          </p>
+        </section>
+
+      </div>
+
+      <!-- Right Column: Meta-Sidebar -->
+      <aside class="case-study-sidebar animate-slide-left delay-2" style="position: sticky; top: 110px; display: flex; flex-direction: column; gap: 2rem;">
+        
+        <!-- Project Stats Summary Card -->
+        <div class="glass-card" style="padding: 1.75rem;">
+          <h4 style="font-size: 1rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent);">
+            Project Metadata
+          </h4>
+          
+          <div style="margin-bottom: 1rem;">
+            <span style="font-size: 0.8rem; color: var(--text-secondary); display: block; text-transform: uppercase;">Difficulty Level</span>
+            <span style="font-size: 0.95rem; font-weight: 600; color: #EF4444;">Advanced</span>
+          </div>
+
+          <div style="margin-bottom: 1rem;">
+            <span style="font-size: 0.8rem; color: var(--text-secondary); display: block; text-transform: uppercase;">Duration</span>
+            <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary);">4 Weeks</span>
+          </div>
+
+          <div style="margin-bottom: 1rem;">
+            <span style="font-size: 0.8rem; color: var(--text-secondary); display: block; text-transform: uppercase;">Primary Role</span>
+            <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary);">Lead Data Analyst</span>
+          </div>
+
+          <div style="margin-bottom: 1rem;">
+            <span style="font-size: 0.8rem; color: var(--text-secondary); display: block; text-transform: uppercase;">Target Deliverable</span>
+            <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary);">Python Prediction Code &amp; Presentation</span>
+          </div>
+        </div>
+
+        <!-- Tech Stack Card -->
+        <div class="glass-card" style="padding: 1.75rem;">
+          <h4 style="font-size: 1rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent);">
+            Technology Stack
+          </h4>
+          <div class="skill-tag-container" style="gap: 0.5rem;">
+            <span class="badge" style="font-size: 0.75rem;">Python</span>
+            <span class="badge" style="font-size: 0.75rem;">Scikit-Learn</span>
+            <span class="badge" style="font-size: 0.75rem;">Pandas</span>
+            <span class="badge" style="font-size: 0.75rem;">NumPy</span>
+            <span class="badge" style="font-size: 0.75rem;">Matplotlib</span>
+            <span class="badge" style="font-size: 0.75rem;">Seaborn</span>
+            <span class="badge" style="font-size: 0.75rem;">Jupyter Notebook</span>
+          </div>
+        </div>
+
+        <!-- Action Card -->
+        <div class="glass-card" style="padding: 1.75rem; text-align: center;">
+          <h4 style="font-size: 1rem; margin-bottom: 1rem; color: var(--text-primary);">Explore Files</h4>
+          <a href="https://github.com" target="_blank" class="btn btn-primary" style="width: 100%; margin-bottom: 0.75rem; font-size: 0.875rem;" id="btn-cs-git">View GitHub Repository</a>
+          <a href="projects.html" class="btn btn-secondary" style="width: 100%; font-size: 0.875rem;" id="btn-cs-back">Back to Projects</a>
+        </div>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="font-size: 1.75rem;">
+          Arpit Ekka<span>.</span>
+        </a>
+        <p class="footer-desc">
+          Recruiter-focused portfolio of a detail-oriented Data Analyst candidate specializing in Python, SQL, and Power BI solutions.
+        </p>
+      </div>
+      <div class="footer-nav">
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Journey</a></li>
+          <li><a href="skills.html">Skills Grid</a></li>
+          <li><a href="projects.html">Projects Case Studies</a></li>
+          <li><a href="resume.html">Resume Details</a></li>
+          <li><a href="certificates.html">Credentials</a></li>
+          <li><a href="contact.html">Contact Hub</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4 class="footer-title">Connect</h4>
+        <ul class="footer-links">
+          <li><a href="https://linkedin.com" target="_blank">LinkedIn Profile</a></li>
+          <li><a href="https://github.com" target="_blank">GitHub Projects</a></li>
+          <li><a href="mailto:arpit.ekka@email.com">Email Direct</a></li>
+          <li><a href="tel:+919876543210">Call +91 9876543210</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Arpit Ekka. All rights reserved.</p>
+      <span>Made with premium HTML5 &amp; CSS3. No JS.</span>
+    </div>
+  </footer>
+
+</body>
+</html>
